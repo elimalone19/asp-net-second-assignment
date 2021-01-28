@@ -1,0 +1,58 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.header = "Assignment 2";
+}
+
+
+<body>
+    <div class="main">
+        
+        <div class="container left"><img src="/img/me.jpg"></div>
+        <div class="container right">
+            <h2>What I hope to get out of this class</h2>
+            <!-- paragraph about what I hope to get out of the class-->
+            <p>I hope to become comfortable with the ASP.NET framework. I would also like to become a better web app developer.</p>
+        </div>
+        <div class="container right">
+            <h2>Jobs I'm Looking At</h2>
+            <!-- top 3 jobs-->
+            <p>1. Software Developer</p>
+            <p>2. Quality Assurance Engineer</p>
+            <p>3. Project Manager</p>
+        </div>
+
+        <div class="container right">
+            <!-- grade calculator-->
+            <h2>Grade Calculator:</h2>
+            <div style="float:left;">
+                <form>
+                    <label>Assignments:</label>
+                    <input id="assignments" />
+                    <br />
+                    <br />
+                    <label>Group Projects:</label>
+                    <input id="groupProjects" />
+                    <br />
+                    <br />
+                    <label>Quizzes:</label>
+                    <input id="quizzes" />
+                    <br />
+                    <br />
+                    <label>Exams:</label>
+                    <input id="exams" />
+                    <br />
+                    <br />
+                    <label>INTEX:</label>
+                    <input id="intex" />
+                    <br />
+                    <br />
+                </form>
+                <button class="myButton" onclick="calculate()">Calculate</button>
+            </div>
+            <p id="grade"></p>
+            <p id="percent"></p>
+        </div>
+    </div>
+</body>
