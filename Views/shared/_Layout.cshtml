@@ -5,8 +5,9 @@
     <!-- title -->
     <title>@ViewBag.header</title>
     <link rel="icon" href="https://i.pinimg.com/originals/f8/e3/7b/f8e37bf74c633ed8c5fdeec50f00043d.jpg">
-    <link href="main.css" rel="stylesheet" />
-    <script src="style.js"></script>
+    <link href="~/main.css" rel="stylesheet" />
+    <script src="\node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="~/style.js"></script>
 </head>
 <body>
     <div class="main">
@@ -14,9 +15,8 @@
             <h1>@ViewBag.header</h1>
             <img style="width: 65px; float: left; margin-right: 9px;" src="https://i.pinimg.com/originals/f8/e3/7b/f8e37bf74c633ed8c5fdeec50f00043d.jpg" />
             <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/tree.html">tree.txt</a></li>
-                <li><a href="#">Extra</a></li>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Home" asp-action="Calculator">Grade Calculator</a></li>
             </ul>
         </div>
     </div>
